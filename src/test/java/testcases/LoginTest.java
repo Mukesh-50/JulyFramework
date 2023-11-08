@@ -21,6 +21,9 @@ public class LoginTest extends BaseClass
 		Assert.assertTrue(homePage.isManageDisplayed());
 		
 		homePage.signOutFromApplication();
+		
+		
+		
 	
 		Assert.assertTrue(login.isSignInDisplayed());
 	}
