@@ -1,6 +1,6 @@
 package testcases;
 
-import org.testng.AssertJUnit;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.learnautomation.base.BaseClass;
 import com.learnautomation.dataProvider.DataProviders;
@@ -18,11 +18,11 @@ public class LoginTest extends BaseClass
 	
 		HomePage homePage=login.loginToApplication(uname,pass);
 		
-		AssertJUnit.assertTrue(homePage.isManageDisplayed());
+		Assert.assertTrue(homePage.isManageDisplayed());
 		
 		homePage.signOutFromApplication();
 	
-		AssertJUnit.assertTrue(login.isSignInDisplayed());
+		Assert.assertTrue(login.isSignInDisplayed());
 	}
 	
 	
